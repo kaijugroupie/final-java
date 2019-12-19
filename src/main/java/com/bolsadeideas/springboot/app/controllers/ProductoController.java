@@ -116,7 +116,7 @@ public class ProductoController {
 	public String eliminarProducto(@PathVariable(value = "id") Long id, RedirectAttributes flash) throws SQLException {
 		
 		
-		Connection con = DriverManager.getConnection("jdbc:postgresql://ec2-174-129-32-230.compute-1.amazonaws.com:5432/dfpp0fsoq4tfki?useSSL=false", "lwkubqufasdobi", "d482468f41adcf02dcb63bb10608ee995a40c8c5bdebd2f3710485be7dcad6e2");
+		Connection con = DriverManager.getConnection("jdbc:postgresql://ec2-174-129-32-230.compute-1.amazonaws.com:5432/dfpp0fsoq4tfki?useSSL=false", "rprhyjyoujshcz", "bc02f2225fce1e51e01e56ba1a43915bf97c52711ed4330ed39b8407737b6653");
 		Statement stmt = con.createStatement();
 		String sqlConsulta = "select * from facturas_items where producto_id = '" + id + "'";
 		ResultSet rs = stmt.executeQuery(sqlConsulta);
