@@ -19,6 +19,7 @@
 							<th>ID</th>
 							<th>Descripción</th>
 							<th>Observación</th>
+							<th>Moneda</th>
 							<th>Cliente</th>
 							<th>Fecha</th>
 							<th>Eliminar</th>
@@ -30,6 +31,7 @@
 							th:href="@{/factura/ver/} + ${factura.id}" th:text="${factura.id}"></a></td>
 							<td th:text="${factura.descripcion}"></td>
 							<td th:text="${factura.observacion}"></td>
+							<td th:text="${factura.moneda}"></td>
 							<td th:text="${factura.cliente.nombre}"></td>
 							<td th:text="${factura.createAt}"></td>
 							<td><a class="btn btn-danger btn-xs"

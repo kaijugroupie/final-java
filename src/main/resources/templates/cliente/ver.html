@@ -19,10 +19,6 @@
 						th:text="'Crear Factura'"></a>
 				</h4>
 
-		<!--		<img th:if="${#strings.length(cliente.foto) > 0}"
-					class="img-thumbnail rounded float-left" style="max-width: 25%;"
-					th:src="@{'/uploads/' + ${cliente.foto}}" th:alt="${cliente.foto}" /> -->
-
 				<ul class="list-group">
 					<li class="list-group-item active" th:text="${cliente.nombre}"></li>
 					<li class="list-group-item" th:text="${cliente.apellido}"></li>
@@ -41,6 +37,7 @@
 							<th>Folio</th>
 							<th>Descripción</th>
 							<th>Fecha</th>
+							<th>Moneda</th>
 							<th>Total</th>
 							<th>Ver</th>
 							<th>Eliminar</th>
@@ -51,6 +48,7 @@
 							<td th:text="${factura.id}"></td>
 							<td th:text="${factura.descripcion}"></td>
 							<td th:text="${factura.createAt}"></td>
+							<td th:text="${factura.moneda}"></td>
 							<td th:text="${factura.total}"></td>
 							<td><a class="btn btn-primary btn-xs"
 								th:href="@{'/factura/ver/' + ${factura.id}}" th:text="'Detalle'"></a></td>

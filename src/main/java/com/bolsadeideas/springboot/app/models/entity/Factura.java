@@ -34,6 +34,8 @@ public class Factura implements Serializable {
 	private String descripcion;
 
 	private String observacion;
+	
+	private String moneda;
 
 	@Temporal(TemporalType.DATE)
 	@Column(name = "create_at")
@@ -71,6 +73,14 @@ public class Factura implements Serializable {
 		this.descripcion = descripcion;
 	}
 
+	public String getMoneda() {
+		return moneda;
+	}
+
+	public void setMoneda(String moneda) {
+		this.moneda = moneda;
+	}
+	
 	public String getObservacion() {
 		return observacion;
 	}

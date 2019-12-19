@@ -28,11 +28,11 @@ INSERT INTO productos (nombre, precio, create_at) VALUES('Vinilo Elvis', 200000,
 INSERT INTO productos (nombre, precio, create_at) VALUES('VHS Gone With The Wind', 60000, NOW());
 
 /* Facturas */
-INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES('Factura Multimedia', null, 1, NOW());
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES('Factura Multimedia', null, 'Gs', 1, NOW());
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 1, 1);
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(2, 1, 4);
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 1, 5);
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 1, 7);
 
-INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES('Factura DVD', 'Alguna nota importante!', 1, NOW());
+INSERT INTO facturas (descripcion, observacion, moneda, cliente_id, create_at) VALUES('Factura DVD', '¡Alguna nota importante!', 'USD', 1, NOW());
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(3, 2, 6);
