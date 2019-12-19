@@ -8,7 +8,7 @@ INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Ada', 'Silvero
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Mauro', 'Rebollo', 'maureb@gmail.com', '2017-08-07');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Lourdes', 'Maldonado', 'lou_maldonado@hotmail.com', '2017-08-08');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Cristhel', 'Leguizamón', 'crisleguizamo@gmail.com', '2017-08-09');
-INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Elisa', 'Acosta', 'eli.acosta@hotmail.com', '2017-08-010');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Elisa', 'Acosta', 'eli.acosta@hotmail.com', '2017-08-10');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Alice', 'Franco', 'alicefr@gmail.com', '2017-08-11');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Matías', 'Trinidad', 'matitrinidad@outlook.com', '2017-08-12');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Iván', 'Herrero', 'herreroivan@outlook.com', '2017-08-13');
@@ -28,7 +28,7 @@ INSERT INTO productos (nombre, precio, create_at) VALUES('Vinilo Elvis', 200000,
 INSERT INTO productos (nombre, precio, create_at) VALUES('VHS Gone With The Wind', 60000, NOW());
 
 /* Facturas */
-INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES('Factura Multimedia', null, 'Gs', 1, NOW());
+INSERT INTO facturas (descripcion, observacion, moneda, cliente_id, create_at) VALUES('Factura Multimedia', null, 'Gs', 1, NOW());
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 1, 1);
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(2, 1, 4);
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 1, 5);
